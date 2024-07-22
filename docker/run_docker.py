@@ -38,7 +38,7 @@ flags.DEFINE_enum('models_to_relax', 'best', ['best', 'all', 'none'],
                   'in case you are having issues with the relaxation '
                   'stage.')
 flags.DEFINE_bool(
-    'enable_gpu_relax', True, 'Run relax on GPU if GPU is enabled.')
+    'enable_gpu_relax', False, 'Run relax on GPU if GPU is enabled.')
 flags.DEFINE_string(
     'gpu_devices', 'all',
     'Comma separated list of devices to pass to NVIDIA_VISIBLE_DEVICES.')
